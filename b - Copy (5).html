@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+		}
+		form {
+			border: 1px solid #ccc;
+			padding: 20px;
+			width: 300px;
+			margin: 0 auto;
+		}
+		input[type=text], input[type=password] {
+			padding: 8px;
+			margin: 5px 0;
+			border: 1px solid #ccc;
+			width: 100%;
+		}
+		button[type=submit] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 15px;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+			margin-top: 10px;
+		}
+		button[type=submit]:hover {
+			background-color: #45a049;
+		}
+		.container {
+			padding: 16px;
+		}
+		span.psw {
+			float: right;
+			padding-top: 16px;
+		}
+	</style>
+</head>
+<body>
+	<h2>Login Form</h2>
+	<form action="" method="post">
+		<div class="container">
+			<label for="username"><b>Username</b></label>
+			<input type="text" placeholder="Enter Username" name="username" required>
+			<label for="password"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="password" required>
+			<button type="submit">Login</button>
+			<label>
+				<input type="checkbox" checked="checked" name="remember"> Remember me
+			</label>
+		</div>
+		<div class="container" style="background-color:#f1f1f1">
+			<span class="psw">Forgot <a href="#">password?</a></span>
+			<span>Don't have an account? <a href="#">Create one</a></span>
+		</div>
+	</form>
+</body>
+</html>
